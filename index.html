@@ -1,0 +1,166 @@
+<!--
+Portfolio: Asfia Haque Arpi
+Single-file HTML portfolio (responsive) — blue & ash theme
+Instructions: save this file as index.html inside your GitHub repo (arpi.github.io) and upload Asfia_Haque_Arpi_Resume.pdf to the same repo root. The Download Resume button links to that PDF.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asfia Haque Arpi — Portfolio</title>
+  <meta name="description" content="Asfia Haque Arpi | Data Science Student | AI Enthusiast" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue-900:#0A3D62; /* deep blue */
+      --blue-700:#2C69A1;
+      --ash-100:#F3F6F9; /* light ash */
+      --ash-300:#D9E1E8; /* mid ash */
+      --muted:#657786;
+      --accent:#3B3B98;
+      --radius:14px;
+      --glass: rgba(255,255,255,0.7);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg, var(--ash-100), #ffffff);color:#102A43;}
+    .container{max-width:1000px;margin:30px auto;padding:28px}
+
+    /* Header */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(248,250,252,0.9));border-radius:18px;padding:28px;box-shadow:0 8px 30px rgba(10, 61, 98, 0.08);}
+    .head{display:flex;gap:18px;align-items:center;justify-content:space-between}
+    .profile{display:flex;gap:18px;align-items:center}
+    .avatar{width:92px;height:92px;border-radius:12px;background:linear-gradient(135deg,var(--blue-700),var(--blue-900));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:24px;color:var(--blue-900)}
+    .sub{color:var(--muted);margin-top:6px;font-size:14px}
+    .cta{display:flex;gap:10px}
+    .btn{background:var(--blue-900);color:white;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:8px}
+    .btn.secondary{background:transparent;color:var(--blue-900);border:1.5px solid var(--ash-300)}
+
+    .avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--ash-300);
+}
+
+
+    /* layout */
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .panel{background:linear-gradient(180deg,white,var(--glass));border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(12,40,80,0.04)}
+    h3{margin:0 0 8px 0;color:var(--accent)}
+    p{margin:0 0 10px 0;line-height:1.5}
+
+    /* skills */
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--ash-300);padding:8px 10px;border-radius:10px;font-weight:600;font-size:13px;color:var(--blue-900)}
+
+    /* projects */
+    .project{border-left:4px solid var(--ash-300);padding:12px 14px;border-radius:8px;background:linear-gradient(180deg, #ffffff , #fbfdff);margin-bottom:12px}
+    .tech{font-size:13px;color:var(--muted);margin-top:6px}
+
+    /* contact */
+    .contact-list{list-style:none;padding:0;margin:0}
+    .contact-list li{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* footer */
+    footer{text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
+
+    /* responsive */
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:72px;height:72px;font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="head">
+        <div class="profile">
+          <img src="arpi.jpeg" alt="Asfia Haque Arpi" class="avatar" />
+
+          <div>
+            <h1>Asfia Haque Arpi</h1>
+            <div class="sub">Data Science Student | AI Enthusiast</div>
+            <div class="sub" style="margin-top:6px">Daffodil International University • CGPA: 3.33 (2022–2025)</div>
+          </div>
+        </div>
+        <div class="cta">
+          <a class="btn" href="Asfia_Haque_Arpi_Resume.pdf" download>⬇ Download Resume</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/asfia-haque-arpi-5626691ba" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Main column -->
+        <div>
+          <div class="panel">
+            <h3>About</h3>
+            <p>I'm a Data Science major at Daffodil International University passionate about AI, machine learning, and building data-driven web applications. I enjoy turning ideas into practical tools — especially in finance and healthcare. Currently exploring projects involving expense optimization and medical image analysis.</p>
+          </div>
+
+          <div class="panel" style="margin-top:12px">
+            <h3>Education</h3>
+            <p><strong>Daffodil International University</strong><br/>B.Sc. in Software Engineering (Major: Data Science) — 2022 &ndash; 2025<br/>CGPA: 3.33</p>
+          </div>
+
+        </div>
+
+        <!-- Side column -->
+        <aside>
+          <div class="panel">
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill">Python</div>
+              <div class="skill">HTML & CSS</div>
+              <div class="skill">SQL</div>
+              <div class="skill">AI / ML</div>
+              <div class="skill">Team Leadership</div>
+              <div class="skill">Microsoft Office</div>
+              <div class="skill">Canva</div>
+            </div>
+          </div>
+
+          <div class="panel" style="margin-top:12px">
+            <h3>Certifications</h3>
+            <p class="muted">AWS Academy Graduate – Machine Learning Foundations<br/>AWS Academy Graduate – Machine Learning for Natural Language Processing<br/><em style="font-size:13px">Issued by Amazon Web Services Training and Certification</em></p>
+          </div>
+
+          <div class="panel" style="margin-top:12px">
+            <h3>Contact</h3>
+            <ul class="contact-list">
+              <li><strong>Email:</strong><span class="muted"> arpi35-972@diu.edu.bd</span></li>
+              <li><strong>Phone:</strong><span class="muted"> 01601461708</span></li>
+              <li><strong>Location:</strong><span class="muted"> Block C, Bashundhara Residential Area, Dhaka</span></li>
+            </ul>
+            <div style="margin-top:8px">
+              <a class="btn" href="mailto:arpi35-972@diu.edu.bd">Email Me</a>
+            </div>
+          </div>
+
+          <div class="panel" style="margin-top:12px;text-align:center">
+            <h3>Languages</h3>
+            <p class="muted">Bangla (Native)<br/>English (Fluent)</p>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <p>Made with  by Asfia Haque Arpi </p>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Small JS: smooth scroll for internal links (if you add nav later)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'})
+      })
+    })
+  </script>
+</body>
+</html>
